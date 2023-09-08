@@ -46,6 +46,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.NavajoWhite;
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
@@ -178,6 +179,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.AntiqueWhite;
             ClientSize = new Size(863, 486);
             Controls.Add(btnClean);
             Controls.Add(panel1);

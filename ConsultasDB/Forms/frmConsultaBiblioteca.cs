@@ -57,5 +57,12 @@ namespace ConsultasDB.Forms
             txtCantidadPaginas.Clear();
             txtCodigoMateria.Clear();
         }
+
+        private void picbtnAbrirCrud_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CRUDLibrary cRUDLibrary = new CRUDLibrary();
+            cRUDLibrary.Show();
+        }
     }
 }

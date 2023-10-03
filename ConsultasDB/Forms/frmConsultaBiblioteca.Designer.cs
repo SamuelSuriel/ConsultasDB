@@ -41,7 +41,10 @@
             txtCodigo = new TextBox();
             btnConsultar = new Button();
             btnClean = new Button();
+            picbtnAbrirCrud = new PictureBox();
+            label5 = new Label();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picbtnAbrirCrud).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -57,7 +60,7 @@
             panel1.Controls.Add(txtCodigoLibro);
             panel1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             panel1.ForeColor = SystemColors.Highlight;
-            panel1.Location = new Point(53, 117);
+            panel1.Location = new Point(55, 156);
             panel1.Name = "panel1";
             panel1.Size = new Size(757, 287);
             panel1.TabIndex = 9;
@@ -142,7 +145,7 @@
             // 
             txtCodigo.Cursor = Cursors.IBeam;
             txtCodigo.Font = new Font("Papyrus", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCodigo.Location = new Point(288, 59);
+            txtCodigo.Location = new Point(290, 101);
             txtCodigo.MaxLength = 100;
             txtCodigo.Name = "txtCodigo";
             txtCodigo.Size = new Size(205, 39);
@@ -154,7 +157,7 @@
             btnConsultar.Cursor = Cursors.Hand;
             btnConsultar.Font = new Font("Papyrus", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnConsultar.ForeColor = SystemColors.ButtonHighlight;
-            btnConsultar.Location = new Point(518, 53);
+            btnConsultar.Location = new Point(520, 95);
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new Size(125, 48);
             btnConsultar.TabIndex = 7;
@@ -167,7 +170,7 @@
             btnClean.Cursor = Cursors.Hand;
             btnClean.Font = new Font("Papyrus", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnClean.ForeColor = SystemColors.Highlight;
-            btnClean.Location = new Point(687, 54);
+            btnClean.Location = new Point(689, 96);
             btnClean.Name = "btnClean";
             btnClean.Size = new Size(123, 47);
             btnClean.TabIndex = 10;
@@ -175,12 +178,37 @@
             btnClean.UseVisualStyleBackColor = true;
             btnClean.Click += btnClean_Click;
             // 
+            // picbtnAbrirCrud
+            // 
+            picbtnAbrirCrud.BackColor = Color.Transparent;
+            picbtnAbrirCrud.Cursor = Cursors.Hand;
+            picbtnAbrirCrud.Image = (Image)resources.GetObject("picbtnAbrirCrud.Image");
+            picbtnAbrirCrud.Location = new Point(55, 30);
+            picbtnAbrirCrud.Name = "picbtnAbrirCrud";
+            picbtnAbrirCrud.Size = new Size(100, 83);
+            picbtnAbrirCrud.SizeMode = PictureBoxSizeMode.CenterImage;
+            picbtnAbrirCrud.TabIndex = 11;
+            picbtnAbrirCrud.TabStop = false;
+            picbtnAbrirCrud.Click += picbtnAbrirCrud_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Papyrus", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(65, 116);
+            label5.Name = "label5";
+            label5.Size = new Size(79, 27);
+            label5.TabIndex = 10;
+            label5.Text = "CRUD";
+            // 
             // frmConsultaBiblioteca
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AntiqueWhite;
             ClientSize = new Size(863, 486);
+            Controls.Add(label5);
+            Controls.Add(picbtnAbrirCrud);
             Controls.Add(btnClean);
             Controls.Add(panel1);
             Controls.Add(txtCodigo);
@@ -192,6 +220,7 @@
             Load += frmConsultaBiblioteca_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picbtnAbrirCrud).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -210,5 +239,7 @@
         private TextBox txtCodigo;
         private Button btnConsultar;
         private Button btnClean;
+        private PictureBox picbtnAbrirCrud;
+        private Label label5;
     }
 }

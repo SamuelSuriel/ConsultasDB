@@ -19,7 +19,7 @@ namespace ConsultasDB.Forms
 
             if (txtCodigo.Text != "")
             {
-                SqlConnection connetionString = new SqlConnection(@"server=LEVHDLL; Database=BibliotecaDB; integrated security =True; TrustServerCertificate=True");
+                SqlConnection connetionString = new SqlConnection(@"server=SRSDELLI5; Database=BibliotecaDB; integrated security =True; TrustServerCertificate=True");
                 connetionString.Open();
 
                 int codigo = int.Parse(txtCodigo.Text);
